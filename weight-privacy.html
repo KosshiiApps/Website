@@ -4,151 +4,123 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weight Tracker – Privacy Policy | KosshiiApps</title>
-  <meta name="description" content="Your weight data stays on your device. No tracking or ads. Learn more about Weight Tracker’s privacy approach.">
-    <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      padding: 1.5rem 2rem;
-      background-color: #000;
-      text-align: center;
-    }
-    .logo {
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2 {
-      text-align: center;
-      color: #fff;
-    }
-    p, li {
-      line-height: 1.6;
-      color: #ccc;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    a {
-      color: #00e0ff;
-      text-decoration: underline;
-    }
-    .back-buttons {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .back-buttons a {
-      background: #fff;
-      color: #000;
-      padding: 0.5rem 1.2rem;
-      border-radius: 999px;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0.5rem;
-      display: inline-block;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #666;
-    }
-  </style>
+  <meta name="description" content="Your weight data stays on your device. No tracking or ads. Learn more about Weight Tracker's privacy approach.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
 </head>
-<body>
-
-  <header>
-    <div class="logo">KosshiiApps</div>
+<body class="bg-gray-950 text-white min-h-screen">
+  <!-- Background gradient -->
+  <div class="fixed inset-0 bg-gradient-to-b from-purple-900/20 via-gray-950 to-gray-950 pointer-events-none"></div>
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl font-bold text-white hover:text-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">KosshiiApps</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Home</a>
+          <a href="index.html#apps" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Apps</a>
+          <a href="index.html#about" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">About</a>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md p-2" aria-expanded="false" aria-label="Toggle menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <div class="container">
-    <h1>🔒 Privacy Policy</h1>
-    <p class="section" style="text-align: center;">
-      <strong>Last updated:</strong> January 2025
-    </p>
+  <main class="relative">
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="prose prose-invert prose-lg max-w-none">
+        <h1 class="text-center">Privacy Policy</h1>
+        <p class="text-center text-sm text-gray-400 mb-8">
+          <strong>Last updated:</strong> January 2025
+        </p>
 
-    <div class="section">
-      <p>This privacy policy describes how <strong>Weight Tracker – Simple Log</strong> (“we”, “our”, or “us”) handles your data and protects your privacy.</p>
-      <p><strong>Simple Summary:</strong> We don’t collect, store, or see any of your personal data. Everything stays on your device and in your Apple Health app if you enable it.</p>
+        <section>
+          <p>This privacy policy describes how <strong>Weight Tracker – Simple Log</strong> ("we", "our", or "us") handles your data and protects your privacy.</p>
+          <p><strong>Simple Summary:</strong> We don't collect, store, or see any of your personal data. Everything stays on your device and in your Apple Health app if you enable it.</p>
+        </section>
+
+        <section>
+          <h2>Information We Collect</h2>
+          <p>We do <strong>not</strong> collect, store, or transmit any personal information. All weight entries are stored locally on your device. If Apple Health sync is enabled, data is shared only with the Apple Health app under your control.</p>
+        </section>
+
+        <section>
+          <h2>Apple Health Integration</h2>
+          <ul>
+            <li>We read existing weight entries from Apple Health to display in-app</li>
+            <li>We save new entries you log into Apple Health</li>
+            <li>We can only access Health data if you explicitly grant permission</li>
+          </ul>
+          <p>Your Apple Health data remains entirely under your control and is not accessed without your consent.</p>
+        </section>
+
+        <section>
+          <h2>Data Storage</h2>
+          <p>App data is stored locally on your device using standard iOS data storage methods. There are no servers or cloud storage involved.</p>
+        </section>
+
+        <section>
+          <h2>Data Sharing</h2>
+          <p>We do not share your data with anyone because we do not have access to it. Your data stays private and on your device.</p>
+        </section>
+
+        <section>
+          <h2>Third-Party Services</h2>
+          <p>This app does <strong>not</strong> use:</p>
+          <ul>
+            <li>Analytics (Google, Firebase, etc.)</li>
+            <li>Advertising networks</li>
+            <li>Social media SDKs</li>
+            <li>External data tracking tools</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data Export</h2>
+          <p>You can export your data as a CSV file using the built-in export feature. This file is created on your device and shared via iOS's standard share sheet — you control where it goes.</p>
+        </section>
+
+        <section>
+          <h2>Children's Privacy</h2>
+          <p>The app does not knowingly collect any data from children under 13. It is rated 4+ and contains no objectionable content.</p>
+        </section>
+
+        <section>
+          <h2>Changes to This Policy</h2>
+          <p>If this policy changes, we will update the "Last updated" date at the top. Continued use of the app means you accept the revised terms.</p>
+        </section>
+
+        <section>
+          <h2>Contact Us</h2>
+          <p>If you have any questions about this privacy policy, please contact us at:<br>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-blue-400 hover:text-blue-300">kosshiiapps@gmail.com</a></p>
+        </section>
+
+        <div class="text-center mt-12 space-x-4">
+          <a href="weight-support.html" class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200 inline-block">
+            ← Back to Support
+          </a>
+          <a href="index.html" class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200 inline-block">
+            🏠 Home
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-sm text-gray-400">© 2025 KosshiiApps. All rights reserved.</p>
     </div>
-
-    <div class="section">
-      <h2>Information We Collect</h2>
-      <p>We do <strong>not</strong> collect, store, or transmit any personal information. All weight entries are stored locally on your device. If Apple Health sync is enabled, data is shared only with the Apple Health app under your control.</p>
-    </div>
-
-    <div class="section">
-      <h2>Apple Health Integration</h2>
-      <ul>
-        <li>We read existing weight entries from Apple Health to display in-app</li>
-        <li>We save new entries you log into Apple Health</li>
-        <li>We can only access Health data if you explicitly grant permission</li>
-      </ul>
-      <p>Your Apple Health data remains entirely under your control and is not accessed without your consent.</p>
-    </div>
-
-    <div class="section">
-      <h2>Data Storage</h2>
-      <p>App data is stored locally on your device using standard iOS data storage methods. There are no servers or cloud storage involved.</p>
-    </div>
-
-    <div class="section">
-      <h2>Data Sharing</h2>
-      <p>We do not share your data with anyone because we do not have access to it. Your data stays private and on your device.</p>
-    </div>
-
-    <div class="section">
-      <h2>Third-Party Services</h2>
-      <p>This app does <strong>not</strong> use:</p>
-      <ul>
-        <li>Analytics (Google, Firebase, etc.)</li>
-        <li>Advertising networks</li>
-        <li>Social media SDKs</li>
-        <li>External data tracking tools</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Data Export</h2>
-      <p>You can export your data as a CSV file using the built-in export feature. This file is created on your device and shared via iOS's standard share sheet — you control where it goes.</p>
-    </div>
-
-    <div class="section">
-      <h2>Children's Privacy</h2>
-      <p>The app does not knowingly collect any data from children under 13. It is rated 4+ and contains no objectionable content.</p>
-    </div>
-
-    <div class="section">
-      <h2>Changes to This Policy</h2>
-      <p>If this policy changes, we will update the "Last updated" date at the top. Continued use of the app means you accept the revised terms.</p>
-    </div>
-
-    <div class="section">
-      <h2>Contact Us</h2>
-      <p>If you have any questions about this privacy policy, please contact us at:<br>
-      <a href="mailto:kosshiiapps@gmail.com">kosshiiapps@gmail.com</a></p>
-    </div>
-
-    <div class="back-buttons">
-      <a href="weight-support.html">← Back to Support</a>
-      <a href="index.html">🏠 Home</a>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2025 KosshiiApps. All rights reserved.</p>
   </footer>
-
 </body>
 </html>

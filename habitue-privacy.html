@@ -5,42 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Habitue – Privacy Policy | KosshiiApps</title>
   <meta name="description" content="We respect your privacy. Habitue keeps your habit tracking data secure and local. Read our full privacy policy.">
-    <style>
-    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
-    header, footer { text-align: center; padding: 2rem; background-color: #000; }
-    .logo { font-size: 1.3rem; font-weight: bold; }
-    .container { max-width: 800px; margin: auto; padding: 2rem; }
-    h1, h2 { text-align: center; }
-    p, li { line-height: 1.6; color: #ccc; }
-    ul { padding-left: 1.5rem; }
-    .links { text-align: center; margin-top: 2rem; }
-    .links a {
-      background: #fff; color: #000; padding: 0.5rem 1.2rem;
-      border-radius: 999px; font-weight: bold; text-decoration: none; margin: 0.5rem;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
 </head>
-<body>
-  <header><div class="logo">KosshiiApps</div></header>
-  <div class="container">
-    <h1>🔒 Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> July 2025</p>
-    <p>We value your privacy. Habitue does not collect or store any personal data.</p>
-    <h2>What We Store</h2>
-    <ul>
-      <li>All data is stored locally on your device</li>
-      <li>Your habits, progress, and settings are not synced externally</li>
-    </ul>
-    <h2>Permissions</h2>
-    <p>Habitue may request notification permissions to remind you of your habits. This is optional and configurable in iOS settings.</p>
-    <h2>Third-Party Services</h2>
-    <p>We do not use any analytics, ads, or external SDKs.</p>
-    <p>Email: <a href="mailto:kosshiiapps@gmail.com">kosshiiapps@gmail.com</a></p>
-  </div>
-  <div class="links">
-    <a href="habitue-support.html">← Back to Support</a>
-    <a href="index.html">🏠 Home</a>
-  </div>
-  <footer>© 2025 KosshiiApps</footer>
+<body class="bg-gray-950 text-white min-h-screen">
+  <!-- Background gradient -->
+  <div class="fixed inset-0 bg-gradient-to-b from-purple-900/20 via-gray-950 to-gray-950 pointer-events-none"></div>
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl font-bold text-white hover:text-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">KosshiiApps</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Home</a>
+          <a href="index.html#apps" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Apps</a>
+          <a href="index.html#about" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">About</a>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md p-2" aria-expanded="false" aria-label="Toggle menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative">
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="prose prose-invert prose-lg max-w-none">
+        <h1 class="text-center">Privacy Policy</h1>
+        <p class="text-center text-sm text-gray-400 mb-8">
+          <strong>Effective Date:</strong> July 2025
+        </p>
+
+        <section>
+          <p>We value your privacy. <strong>Habitue</strong> does not collect or store any personal data.</p>
+        </section>
+
+        <section>
+          <h2>What We Store</h2>
+          <ul>
+            <li>Your habit names and completion history (stored locally on your device)</li>
+            <li>App preferences and settings (stored locally)</li>
+            <li>Reminder preferences (stored locally)</li>
+          </ul>
+          <p>All data remains on your device and is never transmitted to servers or the cloud.</p>
+        </section>
+
+        <section>
+          <h2>What We Don't Collect</h2>
+          <ul>
+            <li>Personal information (name, email, etc.)</li>
+            <li>Usage analytics or tracking data</li>
+            <li>Location data</li>
+            <li>Device identifiers</li>
+            <li>Any data that could identify you</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data Backup and Export</h2>
+          <p>You can export your habit data as a CSV file using the app's export feature. This file is created locally and shared through iOS's standard share sheet - you control where it goes.</p>
+        </section>
+
+        <section>
+          <h2>Third-Party Services</h2>
+          <p>Habitue does <strong>not</strong> use:</p>
+          <ul>
+            <li>Analytics services</li>
+            <li>Advertising networks</li>
+            <li>Social media SDKs</li>
+            <li>External tracking tools</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Children's Privacy</h2>
+          <p>The app does not knowingly collect any data from users of any age. It is suitable for all ages and contains no objectionable content.</p>
+        </section>
+
+        <section>
+          <h2>Changes to This Policy</h2>
+          <p>If this policy changes, we will update the "Effective Date" at the top. Continued use of the app means you accept the revised terms.</p>
+        </section>
+
+        <section>
+          <h2>Contact Us</h2>
+          <p>If you have any questions about this privacy policy, please contact us at:<br>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-blue-400 hover:text-blue-300">kosshiiapps@gmail.com</a></p>
+        </section>
+
+        <div class="text-center mt-12 space-x-4">
+          <a href="habitue-support.html" class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200 inline-block">
+            ← Back to Support
+          </a>
+          <a href="index.html" class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200 inline-block">
+            🏠 Home
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-sm text-gray-400">© 2025 KosshiiApps. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

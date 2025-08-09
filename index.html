@@ -4,190 +4,120 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>KosshiiApps – Simple, Thoughtful Apps for Focus & Wellness</title>
-<meta name="description" content="Discover beautifully designed iOS apps crafted for focus, wellness, and everyday simplicity. Built by an indie developer with care and intention.">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 2rem;
-      background-color: #000;
-    }
-    .logo {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-    nav a {
-      margin-left: 2rem;
-      text-decoration: none;
-      color: #aaa;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-    .hero {
-      text-align: center;
-      padding: 4rem 2rem 2rem;
-    }
-    .hero h1 {
-      font-size: 2.8rem;
-    }
-    .hero p {
-      color: #ccc;
-      margin: 1rem 0 2rem;
-      font-size: 1.2rem;
-    }
-    .cta {
-      background: #fff;
-      color: #000;
-      padding: 0.6rem 1.4rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .apps-section {
-      padding: 4rem 2rem;
-      background-color: #111;
-    }
-    .apps-section h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .app-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-    .app-tile {
-      background: #1a1a1a;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      width: 280px;
-      text-align: center;
-    }
-    .app-tile img {
-      width: 100px;
-      height: 100px;
-      object-fit: contain;
-      margin-bottom: 1rem;
-    }
-    .app-tile h3 {
-      margin-bottom: 0.5rem;
-    }
-    .app-tile a {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #fff;
-      color: #000;
-      padding: 0.4rem 1rem;
-      border-radius: 999px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    .info-section {
-      padding: 4rem 2rem;
-      background: #000;
-      max-width: 800px;
-      margin: auto;
-    }
-    .info-section h2 {
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .info-section p {
-      color: #ccc;
-      line-height: 1.6;
-      text-align: center;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #666;
-    }
-  </style>
+  <meta name="description" content="Discover beautifully designed iOS apps crafted for focus, wellness, and everyday simplicity. Built by an indie developer with care and intention.">
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
 </head>
-<body>
-  <header>
-    <div class="logo">KosshiiApps</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#apps">Apps</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+<body class="bg-gray-950 text-white min-h-screen">
+  <!-- Background gradient -->
+  <div class="fixed inset-0 bg-gradient-to-b from-purple-900/20 via-gray-950 to-gray-950 pointer-events-none"></div>
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl font-bold text-white hover:text-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">KosshiiApps</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Home</a>
+          <a href="#apps" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Apps</a>
+          <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">About</a>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md p-2" aria-expanded="false" aria-label="Toggle menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>KosshiiApps</h1>
-    <p>Thoughtfully crafted apps for focus, wellness, and everyday use.</p>
-    <a class="cta" href="#apps">Explore Our Apps</a>
-  </section>
+  <main class="relative">
+    <!-- Hero Section -->
+    <section class="text-center py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">KosshiiApps</h1>
+        <p class="text-xl sm:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">Thoughtfully crafted apps for focus, wellness, and everyday use.</p>
+        <a href="#apps" class="inline-block bg-white text-gray-950 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-gray-950 transition-all duration-200 transform hover:scale-105">
+          Explore Our Apps
+        </a>
+      </div>
+    </section>
 
-  <section class="apps-section" id="apps">
-    <h2>Our Apps</h2>
-    <div class="app-gallery">
-      <div class="app-tile">
-        <img src="icons/PomodoroIcon_BlackBackground.png" alt="Focus Timer Icon">
-        <h3>Focus Timer</h3>
-        <p>Pomodoro-based deep work tool</p>
-        <a href="focus-timer.html">View App</a>
+    <!-- Apps Section -->
+    <section id="apps" class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Our Apps</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 ring-1 ring-white/10 hover:ring-white/20 transition-all duration-300 transform hover:scale-105 text-center group">
+            <img src="icons/PomodoroIcon_BlackBackground.png" alt="Focus Timer Icon" class="w-24 h-24 object-contain mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <h3 class="text-xl font-semibold mb-2">Focus Timer</h3>
+            <p class="text-gray-400 mb-4">Pomodoro-based deep work tool</p>
+            <a href="focus-timer.html" class="inline-block bg-white text-gray-950 font-medium px-6 py-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200">
+              View App
+            </a>
+          </div>
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 ring-1 ring-white/10 hover:ring-white/20 transition-all duration-300 transform hover:scale-105 text-center group">
+            <img src="icons/3c65d8a1-8afe-41fa-a41a-03aa19cfa42f.png" alt="Salah App Icon" class="w-24 h-24 object-contain mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <h3 class="text-xl font-semibold mb-2">Salah</h3>
+            <p class="text-gray-400 mb-4">Prayer time & Qibla compass</p>
+            <a href="salah.html" class="inline-block bg-white text-gray-950 font-medium px-6 py-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200">
+              View App
+            </a>
+          </div>
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 ring-1 ring-white/10 hover:ring-white/20 transition-all duration-300 transform hover:scale-105 text-center group">
+            <img src="icons/e77f569c-f9c6-4716-becd-36e4a5aa1927.png" alt="Weight Tracker Icon" class="w-24 h-24 object-contain mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <h3 class="text-xl font-semibold mb-2">Weight Tracker</h3>
+            <p class="text-gray-400 mb-4">Track your weight progress</p>
+            <a href="weight.html" class="inline-block bg-white text-gray-950 font-medium px-6 py-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200">
+              View App
+            </a>
+          </div>
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 ring-1 ring-white/10 hover:ring-white/20 transition-all duration-300 transform hover:scale-105 text-center group">
+            <img src="icons/habitueIcon.png" alt="Habitue Icon" class="w-24 h-24 object-contain mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <h3 class="text-xl font-semibold mb-2">Habitue</h3>
+            <p class="text-gray-400 mb-4">Beautiful, intuitive habit tracking</p>
+            <a href="habitue.html" class="inline-block bg-white text-gray-950 font-medium px-6 py-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200">
+              View App
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="app-tile">
-        <img src="icons/3c65d8a1-8afe-41fa-a41a-03aa19cfa42f.png" alt="Salah App Icon">
-        <h3>Salah</h3>
-        <p>Prayer time & Qibla compass</p>
-        <a href="salah.html">View App</a>
-      </div>
-      <div class="app-tile">
-        <img src="icons/e77f569c-f9c6-4716-becd-36e4a5aa1927.png" alt="Weight Tracker Icon">
-        <h3>Weight Tracker</h3>
-        <p>Track your weight progress</p>
-        <a href="weight.html">View App</a>
-      </div>
-      <div class="app-tile">
-        <img src="icons/habitueIcon.png" alt="Habitue Icon">
-        <h3>Habitue</h3>
-        <p>Beautiful, intuitive habit tracking</p>
-        <a href="habitue.html">View App</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="info-section" id="about">
-    <h2>About KosshiiApps</h2>
-    <p>KosshiiApps is a one-person indie project, created out of pure curiosity and love for building useful tools.
-      I enjoy crafting simple, focused apps that solve everyday problems—from staying on track with goals to improving focus and routine.
-      Every app is built with care, design minimalism, and real-world usefulness in mind.</p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8">About KosshiiApps</h2>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          KosshiiApps is a one-person indie project, created out of pure curiosity and love for building useful tools.
+          I enjoy crafting simple, focused apps that solve everyday problems—from staying on track with goals to improving focus and routine.
+          Every app is built with care, design minimalism, and real-world usefulness in mind.
+        </p>
+      </div>
+    </section>
 
-  <section class="info-section" id="contact">
-    <h2>Contact</h2>
-    <p>If you have questions, feedback, or support inquiries, feel free to reach out via email at <a href="mailto:kosshiiapps@gmail.com" style="color: #fff; text-decoration: underline;">kosshiiapps@gmail.com</a>. I'm happy to hear from you!</p>
-  </section>
-  <div style="text-align: center; padding-bottom: 2rem;">
-    <a href="mailto:kosshiiapps@gmail.com" style="
-      background: #fff;
-      color: #000;
-      padding: 0.6rem 1.4rem;
-      border-radius: 999px;
-      font-weight: bold;
-      text-decoration: none;
-    ">Contact</a>
-  </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8">Contact</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          If you have questions, feedback, or support inquiries, feel free to reach out via email. I'm happy to hear from you!
+        </p>
+        <a href="mailto:kosshiiapps@gmail.com" class="inline-block bg-white text-gray-950 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-gray-950 transition-all duration-200 transform hover:scale-105">
+          Contact Us
+        </a>
+      </div>
+    </section>
+  </main>
   
-  <footer>
-    <p>© 2025 KosshiiApps &mdash; kosshiiapps@gmail.com</p>
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-sm text-gray-400">© 2025 KosshiiApps — kosshiiapps@gmail.com</p>
+    </div>
   </footer>
 </body>
 </html>

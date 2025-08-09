@@ -5,139 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Salah – Support | KosshiiApps</title>
   <meta name="description" content="Questions about Salah app? Find FAQs and instructions for location, Qibla compass calibration, and prayer notifications.">
-    <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      padding: 1.5rem 2rem;
-      background-color: #000;
-      text-align: center;
-    }
-    .logo {
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    p {
-      line-height: 1.6;
-      color: #ccc;
-    }
-    .faq {
-      margin-top: 2rem;
-    }
-    .faq h3 {
-      margin-top: 1.5rem;
-      color: #fff;
-    }
-    .highlight {
-      font-weight: bold;
-      color: #fff;
-    }
-    a {
-      color: #00e0ff;
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #666;
-    }
-    .back-buttons {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .back-buttons a {
-      background: #fff;
-      color: #000;
-      padding: 0.5rem 1.2rem;
-      border-radius: 999px;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0.5rem;
-      display: inline-block;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
 </head>
-<body>
-
-  <header>
-    <div class="logo">KosshiiApps</div>
+<body class="bg-gray-950 text-white min-h-screen">
+  <!-- Background gradient -->
+  <div class="fixed inset-0 bg-gradient-to-b from-purple-900/20 via-gray-950 to-gray-950 pointer-events-none"></div>
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl font-bold text-white hover:text-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">KosshiiApps</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Home</a>
+          <a href="index.html#apps" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Apps</a>
+          <a href="index.html#about" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">About</a>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md p-2" aria-expanded="false" aria-label="Toggle menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <div class="container">
-    <h1>🌙 Salah - Prayer & Qibla Support</h1>
+  <main class="relative">
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="prose prose-invert prose-lg max-w-none">
+        <h1 class="text-center">Salah - Prayer & Qibla Support</h1>
 
-    <h2>📧 Contact & Support</h2>
-    <p>For support, questions, or feedback, email us at:<br>
-    <a href="mailto:kosshiiapps@gmail.com">kosshiiapps@gmail.com</a><br>
-    We typically respond within 24 hours.</p>
+        <section>
+          <h2>Contact & Support</h2>
+          <p>For support, questions, or feedback, email us at:<br>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-blue-400 hover:text-blue-300">kosshiiapps@gmail.com</a><br>
+          We typically respond within 24 hours.</p>
+        </section>
 
-    <div class="faq">
-      <h2>❓ Frequently Asked Questions</h2>
+        <section>
+          <h2>Frequently Asked Questions</h2>
 
-      <h3>Prayer times seem incorrect?</h3>
-      <p>Ensure location services are enabled in <span class="highlight">Settings → Privacy & Security → Location Services</span>. Prayer times are based on your GPS coordinates.</p>
+          <h3>Prayer times seem incorrect?</h3>
+          <p>Ensure location services are enabled in <strong>Settings → Privacy & Security → Location Services</strong>. Prayer times are based on your GPS coordinates.</p>
 
-      <h3>Qibla compass not working properly?</h3>
-      <ul>
-        <li>Hold your phone completely flat</li>
-        <li>Calibrate by moving your phone in a figure-8 motion</li>
-        <li>Ensure location services are enabled</li>
-        <li>Move away from magnetic interference</li>
-      </ul>
+          <h3>Qibla compass not working properly?</h3>
+          <ul>
+            <li>Hold your phone completely flat</li>
+            <li>Calibrate by moving your phone in a figure-8 motion</li>
+            <li>Ensure location services are enabled</li>
+            <li>Move away from magnetic interference</li>
+          </ul>
 
-      <h3>Prayer notifications not appearing?</h3>
-      <p>Go to <span class="highlight">Settings → Notifications → Salah → Allow Notifications</span>. Also make sure the toggle is ON inside the app.</p>
+          <h3>Prayer notifications not appearing?</h3>
+          <p>Go to <strong>Settings → Notifications → Salah → Allow Notifications</strong>. Also make sure the toggle is ON inside the app.</p>
 
-      <h3>App shows "Getting your location..."?</h3>
-      <ul>
-        <li>Restart the app</li>
-        <li>Check location permissions</li>
-        <li>Ensure you're connected to the internet for the first use</li>
-      </ul>
+          <h3>App shows "Getting your location..."?</h3>
+          <ul>
+            <li>Restart the app</li>
+            <li>Check location permissions</li>
+            <li>Ensure you're connected to the internet for the first use</li>
+          </ul>
 
-      <h3>Can I use the app offline?</h3>
-      <p>Yes! Once your location is set up, the app will cache your data and work offline.</p>
+          <h3>Can I use the app offline?</h3>
+          <p>Yes! Once your location is set up, the app will cache your data and work offline.</p>
 
-      <h3>Why are Ramadan times showing outside Ramadan?</h3>
-      <p>The app uses the Islamic calendar. If this happens in error, contact support.</p>
+          <h3>Why are Ramadan times showing outside Ramadan?</h3>
+          <p>The app uses the Islamic calendar. If this happens in error, contact support.</p>
+        </section>
+
+        <section>
+          <h2>Privacy & Data</h2>
+          <p>Your location data stays completely on your device. We do not collect or transmit any personal information. Read our <a href="salah-privacy.html" class="text-blue-400 hover:text-blue-300">full Privacy Policy</a>.</p>
+        </section>
+
+        <section>
+          <h2>Feature Requests</h2>
+          <p>Have a feature you'd love to see? Send your idea to <a href="mailto:kosshiiapps@gmail.com" class="text-blue-400 hover:text-blue-300">kosshiiapps@gmail.com</a> — we read every message.</p>
+        </section>
+
+        <section>
+          <h2>App Information</h2>
+          <p>
+            <strong>Version:</strong> 1.0<br>
+            <strong>Last Updated:</strong> July 2025<br>
+            <strong>Compatibility:</strong> iOS 14.0 or later<br>
+            <strong>Developer:</strong> KosshiiApps
+          </p>
+        </section>
+
+        <div class="text-center mt-12 space-x-4">
+          <a href="salah.html" class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200 inline-block">
+            ← Back to App Page
+          </a>
+          <a href="index.html" class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200 inline-block">
+            🏠 Home
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-sm text-gray-400">© 2025 KosshiiApps. Made with care for the Muslim community</p>
     </div>
-
-    <h2>🔒 Privacy & Data</h2>
-    <p>Your location data stays completely on your device. We do not collect or transmit any personal information. Read our <a href="salah-privacy.html">full Privacy Policy</a>.</p>
-
-    <h2>✨ Feature Requests</h2>
-    <p>Have a feature you'd love to see? Send your idea to <a href="mailto:kosshiiapps@gmail.com">kosshiiapps@gmail.com</a> — we read every message.</p>
-
-    <h2>📱 App Information</h2>
-    <p>
-      <strong>Version:</strong> 1.0<br>
-      <strong>Last Updated:</strong> July 2025<br>
-      <strong>Compatibility:</strong> iOS 14.0 or later<br>
-      <strong>Developer:</strong> KosshiiApps
-    </p>
-
-    <div class="back-buttons">
-      <a href="salah.html">← Back to App Page</a>
-      <a href="index.html">🏠 Home</a>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2025 KosshiiApps. Made with ❤️ for the Muslim community</p>
   </footer>
-
 </body>
 </html>

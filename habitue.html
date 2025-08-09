@@ -5,86 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Habitue – Easy Habit Tracking for iOS | KosshiiApps</title>
   <meta name="description" content="Build better habits with Habitue. Track routines, streaks, and insights in a calm and motivating interface. iOS app for consistency and clarity.">
-    <style>
-    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #000; color: #fff; }
-    header, footer { text-align: center; padding: 2rem; background-color: #000; }
-    .logo { font-size: 1.3rem; font-weight: bold; }
-    .hero { text-align: center; padding: 3rem 2rem 2rem; }
-    .hero img { width: 120px; height: 120px; object-fit: contain; margin-bottom: 1rem; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .hero p { color: #ccc; max-width: 600px; margin: 0 auto 2rem; font-size: 1.1rem; line-height: 1.6; }
-    .features { max-width: 800px; margin: auto; padding: 1rem; }
-    .features ul { padding-left: 1.5rem; }
-    .features li { line-height: 1.8; color: #ccc; }
-
-    .screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-      padding: 2rem;
-    }
-    .screenshots img {
-      width: 220px;
-      height: auto;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 10px #000;
-    }
-
-    .appstore, .links {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .appstore a, .links a {
-      background: #fff;
-      color: #000;
-      padding: 0.6rem 1.2rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0.5rem;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
 </head>
-<body>
-  <header><div class="logo">KosshiiApps</div></header>
+<body class="bg-gray-950 text-white min-h-screen">
+  <!-- Background gradient -->
+  <div class="fixed inset-0 bg-gradient-to-b from-purple-900/20 via-gray-950 to-gray-950 pointer-events-none"></div>
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl font-bold text-white hover:text-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">KosshiiApps</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Home</a>
+          <a href="index.html#apps" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Apps</a>
+          <a href="index.html#about" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">About</a>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md p-2" aria-expanded="false" aria-label="Toggle menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-  <section class="hero">
-    <img src="icons/habitueicon.png" alt="Habitue Icon">
-    <h1>Habitue – Easy Habit Tracking</h1>
-    <p>Build better habits, one day at a time. Habitue helps you stay consistent with a beautiful, data-driven habit tracker designed for clarity and motivation.</p>
-  </section>
+  <main class="relative">
+    <!-- Hero Section -->
+    <section class="text-center py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <img src="icons/habitueicon.png" alt="Habitue Icon" class="w-32 h-32 object-contain mx-auto mb-6">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-6">Habitue – Easy Habit Tracking</h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          Build better habits, one day at a time. Habitue helps you stay consistent with a beautiful, data-driven habit tracker designed for clarity and motivation.
+        </p>
+      </div>
+    </section>
 
-  <section class="features">
-    <ul>
-      <li>✅ Track daily habits with ease</li>
-      <li>🔥 Build streaks that keep you motivated</li>
-      <li>📊 View progress weekly, monthly, and yearly</li>
-      <li>📅 Calendar & charts to visualize your consistency</li>
-      <li>📈 Get insights on your most consistent habits</li>
-      <li>🌙 Dark mode for night-friendly use</li>
-      <li>🔔 Smart reminders to stay on schedule</li>
-    </ul>
-  </section>
+    <!-- Features Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 ring-1 ring-white/10">
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg">
+            <li class="flex items-center space-x-3 text-gray-300">
+              <span class="text-green-400">✅</span>
+              <span>Track daily habits with ease</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-300">
+              <span class="text-orange-400">🔥</span>
+              <span>Build streaks that keep you motivated</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-300">
+              <span class="text-blue-400">📊</span>
+              <span>View progress weekly, monthly, and yearly</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-300">
+              <span class="text-purple-400">📅</span>
+              <span>Calendar & charts to visualize your consistency</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-300">
+              <span class="text-emerald-400">📈</span>
+              <span>Get insights on your most consistent habits</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-300">
+              <span class="text-indigo-400">🌙</span>
+              <span>Dark mode for night-friendly use</span>
+            </li>
+            <li class="flex items-center space-x-3 text-gray-300 md:col-span-2 justify-center">
+              <span class="text-yellow-400">🔔</span>
+              <span>Smart reminders to stay on schedule</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section class="screenshots">
-    <img src="screenshots/habitue1.png" alt="Habitue Screenshot 1">
-    <img src="screenshots/habitue2.png" alt="Habitue Screenshot 2">
-    <img src="screenshots/habitue3.png" alt="Habitue Screenshot 3">
-    <img src="screenshots/habitue4.png" alt="Habitue Screenshot 4">
-    <img src="screenshots/habitue5.png" alt="Habitue Screenshot 5">
-  </section>
+    <!-- Screenshots Gallery -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-items-center">
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-4 ring-1 ring-white/10">
+            <img src="screenshots/habitue1.png" alt="Habitue Screenshot 1" class="w-full max-w-xs mx-auto rounded-xl">
+          </div>
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-4 ring-1 ring-white/10">
+            <img src="screenshots/habitue2.png" alt="Habitue Screenshot 2" class="w-full max-w-xs mx-auto rounded-xl">
+          </div>
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-4 ring-1 ring-white/10">
+            <img src="screenshots/habitue3.png" alt="Habitue Screenshot 3" class="w-full max-w-xs mx-auto rounded-xl">
+          </div>
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-4 ring-1 ring-white/10">
+            <img src="screenshots/habitue4.png" alt="Habitue Screenshot 4" class="w-full max-w-xs mx-auto rounded-xl">
+          </div>
+          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-4 ring-1 ring-white/10">
+            <img src="screenshots/habitue5.png" alt="Habitue Screenshot 5" class="w-full max-w-xs mx-auto rounded-xl">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="appstore">
-    <a href="https://apps.apple.com/ch/app/habitue-easy-habit-tracking/id6748765107?l=en-GB&platform=iphone">Download on the App Store</a>
-  </div>
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a href="https://apps.apple.com/ch/app/habitue-easy-habit-tracking/id6748765107?l=en-GB&platform=iphone" 
+             class="transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-gray-950 rounded-lg">
+            <img src="badges/app-store-badge.svg" alt="Download on the App Store" class="h-12 sm:h-14">
+          </a>
+          <a href="habitue-privacy.html" 
+             class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200">
+            Privacy Policy
+          </a>
+          <a href="habitue-support.html" 
+             class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200">
+            Support
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <div class="links">
-    <a href="habitue-support.html">Support</a>
-    <a href="habitue-privacy.html">Privacy Policy</a>
-    <a href="index.html">Home</a>
-  </div>
-
-  <footer>© 2025 KosshiiApps – kosshiiapps@gmail.com</footer>
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-sm text-gray-400">© 2025 KosshiiApps — kosshiiapps@gmail.com</p>
+    </div>
+  </footer>
 </body>
 </html>

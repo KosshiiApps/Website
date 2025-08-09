@@ -1,0 +1,12 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="40" rx="8" fill="black"/>
+  <rect x="0.5" y="0.5" width="119" height="39" rx="7.5" stroke="white" stroke-opacity="0.2"/>
+  
+  <!-- App Store Logo -->
+  <path d="M24.769 20.301c-.143-1.569.896-2.996 2.374-3.777-.896-1.294-2.374-2.085-4.019-2.085-1.645 0-3.269.791-4.166 2.085 1.478.781 2.517 2.208 2.374 3.777-.143 1.569-1.182 2.996-2.374 3.777.897 1.294 2.521 2.085 4.166 2.085 1.645 0 3.123-.791 4.019-2.085-1.192-.781-2.231-2.208-2.374-3.777z" fill="white"/>
+  <path d="M22.125 16.439c-.736 0-1.333-.597-1.333-1.333 0-.736.597-1.333 1.333-1.333s1.333.597 1.333 1.333c0 .736-.597 1.333-1.333 1.333z" fill="white"/>
+  
+  <!-- Text -->
+  <text x="35" y="16" fill="white" font-family="SF Pro Display, -apple-system, sans-serif" font-size="9" font-weight="400">Download on the</text>
+  <text x="35" y="28" fill="white" font-family="SF Pro Display, -apple-system, sans-serif" font-size="13" font-weight="600">App Store</text>
+</svg>

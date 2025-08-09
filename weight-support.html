@@ -5,169 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weight Tracker – Support | KosshiiApps</title>
   <meta name="description" content="Support page for Weight Tracker. Learn how to log weight, sync with Apple Health, set goals, and export data.">
-    <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      padding: 1.5rem 2rem;
-      text-align: center;
-      background-color: #000;
-    }
-    .logo {
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-    .container {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1, h2, h3 {
-      text-align: center;
-      color: #fff;
-    }
-    p, li {
-      color: #ccc;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .highlight {
-      color: #fff;
-      font-weight: bold;
-    }
-    a {
-      color: #00e0ff;
-      text-decoration: underline;
-    }
-    .back-buttons {
-      text-align: center;
-      margin-top: 2rem;
-    }
-    .back-buttons a {
-      background: #fff;
-      color: #000;
-      padding: 0.5rem 1.2rem;
-      border-radius: 999px;
-      font-weight: bold;
-      text-decoration: none;
-      margin: 0.5rem;
-      display: inline-block;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #666;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
 </head>
-<body>
-
-  <header>
-    <div class="logo">KosshiiApps</div>
+<body class="bg-gray-950 text-white min-h-screen">
+  <!-- Background gradient -->
+  <div class="fixed inset-0 bg-gradient-to-b from-purple-900/20 via-gray-950 to-gray-950 pointer-events-none"></div>
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl font-bold text-white hover:text-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">KosshiiApps</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Home</a>
+          <a href="index.html#apps" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Apps</a>
+          <a href="index.html#about" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">About</a>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Contact</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md p-2" aria-expanded="false" aria-label="Toggle menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <div class="container">
-    <h1>💪 Weight Tracker Support</h1>
-    <p class="section" style="text-align: center;">Welcome to <strong>Weight Tracker – Simple Log</strong>! We're here to help you get the most out of your weight tracking journey.</p>
+  <main class="relative">
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="prose prose-invert prose-lg max-w-none">
+        <h1 class="text-center">Weight Tracker Support</h1>
+        <p class="text-center lead">Welcome to <strong>Weight Tracker – Simple Log</strong>! We're here to help you get the most out of your weight tracking journey.</p>
 
-    <div class="section">
-      <h2>✨ What You Can Do</h2>
-      <ul>
-        <li>Track Daily Weight with a clean, simple interface</li>
-        <li>View Progress through clear charts and statistics</li>
-        <li>Set Goals to stay motivated</li>
-        <li>Sync with Apple Health seamlessly</li>
-        <li>Export your Data as CSV files</li>
-      </ul>
+        <section>
+          <h2>What You Can Do</h2>
+          <ul>
+            <li>Track Daily Weight with a clean, simple interface</li>
+            <li>View Progress through clear charts and statistics</li>
+            <li>Set Goals to stay motivated</li>
+            <li>Sync with Apple Health seamlessly</li>
+            <li>Export your Data as CSV files</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Frequently Asked Questions</h2>
+
+          <h3>How do I log my weight?</h3>
+          <p>Go to the "Today" tab → tap the weight button → pick your weight → tap "LOG WEIGHT".</p>
+
+          <h3>How do I enable Apple Health sync?</h3>
+          <p>Settings → Apple Health Sync → Toggle on. Grant read & write permissions when prompted.</p>
+
+          <h3>Can I change between pounds and kilograms?</h3>
+          <p>Yes! Settings → Weight Unit → choose your preference. The app will convert all data automatically.</p>
+
+          <h3>How do I set a goal weight?</h3>
+          <p>Settings → Goal Weight → select your target. Progress will show in the Progress tab.</p>
+
+          <h3>Can I export my data?</h3>
+          <p>Yes! Settings → Export Data → save or share as CSV.</p>
+
+          <h3>Will Apple Health sync old data?</h3>
+          <p>No. Only data from when you first enable sync will be included, to keep tracking clean.</p>
+
+          <h3>How do I clear all my data?</h3>
+          <p>Settings → Clear All Data. This deletes all in-app data but leaves Apple Health untouched.</p>
+
+          <h3>Is my data private and secure?</h3>
+          <p>Yes! All data stays on your device or Apple Health. We do not collect, store, or see anything you enter.</p>
+        </section>
+
+        <section>
+          <h2>Troubleshooting</h2>
+
+          <h3>Apple Health sync isn't working</h3>
+          <ul>
+            <li>Check permissions in iPhone Settings → Privacy & Security → Health</li>
+            <li>Make sure both read & write are enabled</li>
+            <li>Try turning sync off and on again in app Settings</li>
+          </ul>
+
+          <h3>The app is crashing or not working</h3>
+          <ul>
+            <li>Force close and reopen the app</li>
+            <li>Restart your iPhone</li>
+            <li>Ensure you're using the latest version from the App Store</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Still Need Help?</h2>
+          <p>We're happy to help! Just email us at:<br>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-blue-400 hover:text-blue-300">kosshiiapps@gmail.com</a><br>
+          We typically respond within 24 hours.</p>
+        </section>
+
+        <section>
+          <h2>Love the App?</h2>
+          <p>If you're enjoying Weight Tracker, please consider leaving a review on the App Store. It helps others discover the app and supports continued development!</p>
+        </section>
+
+        <section>
+          <h2>App Info</h2>
+          <p>
+            <strong>Version:</strong> 1.0<br>
+            <strong>Last Updated:</strong> July 2025<br>
+            <strong>Compatibility:</strong> iOS 14.0 or later<br>
+            <strong>Developer:</strong> KosshiiApps
+          </p>
+        </section>
+
+        <div class="text-center mt-12 space-x-4">
+          <a href="weight.html" class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200 inline-block">
+            ← Back to App Page
+          </a>
+          <a href="index.html" class="bg-white/10 text-white font-medium px-6 py-3 rounded-full hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-colors duration-200 inline-block">
+            🏠 Home
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="text-sm text-gray-400">© 2025 KosshiiApps. Made with care for your health journey</p>
     </div>
-
-    <div class="section">
-      <h2>❓ Frequently Asked Questions</h2>
-
-      <h3>How do I log my weight?</h3>
-      <p>Go to the "Today" tab → tap the weight button → pick your weight → tap "LOG WEIGHT".</p>
-
-      <h3>How do I enable Apple Health sync?</h3>
-      <p>Settings → Apple Health Sync → Toggle on. Grant read & write permissions when prompted.</p>
-
-      <h3>Can I change between pounds and kilograms?</h3>
-      <p>Yes! Settings → Weight Unit → choose your preference. The app will convert all data automatically.</p>
-
-      <h3>How do I set a goal weight?</h3>
-      <p>Settings → Goal Weight → select your target. Progress will show in the Progress tab.</p>
-
-      <h3>Can I export my data?</h3>
-      <p>Yes! Settings → Export Data → save or share as CSV.</p>
-
-      <h3>Will Apple Health sync old data?</h3>
-      <p>No. Only data from when you first enable sync will be included, to keep tracking clean.</p>
-
-      <h3>How do I clear all my data?</h3>
-      <p>Settings → Clear All Data. This deletes all in-app data but leaves Apple Health untouched.</p>
-
-      <h3>Is my data private and secure?</h3>
-      <p>Yes! All data stays on your device or Apple Health. We do not collect, store, or see anything you enter.</p>
-    </div>
-
-    <div class="section">
-      <h2>🛠 Troubleshooting</h2>
-
-      <h3>Apple Health sync isn't working</h3>
-      <ul>
-        <li>Check permissions in iPhone Settings → Privacy & Security → Health</li>
-        <li>Make sure both read & write are enabled</li>
-        <li>Try turning sync off and on again in app Settings</li>
-      </ul>
-
-      <h3>The app is crashing or not working</h3>
-      <ul>
-        <li>Force close and reopen the app</li>
-        <li>Restart your iPhone</li>
-        <li>Ensure you're using the latest version from the App Store</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>📧 Still Need Help?</h2>
-      <p>We're happy to help! Just email us at:<br>
-      <a href="mailto:kosshiiapps@gmail.com">kosshiiapps@gmail.com</a><br>
-      We typically respond within 24 hours.</p>
-    </div>
-
-    <div class="section">
-      <h2>⭐ Love the App?</h2>
-      <p>If you’re enjoying Weight Tracker, please consider leaving a review on the App Store. It helps others discover the app and supports continued development!</p>
-    </div>
-
-    <div class="section">
-      <h2>📱 App Info</h2>
-      <p>
-        <strong>Version:</strong> 1.0<br>
-        <strong>Last Updated:</strong> July 2025<br>
-        <strong>Compatibility:</strong> iOS 14.0 or later<br>
-        <strong>Developer:</strong> KosshiiApps
-      </p>
-    </div>
-
-    <div class="back-buttons">
-      <a href="weight.html">← Back to App Page</a>
-      <a href="index.html">🏠 Home</a>
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2025 KosshiiApps. Made with ❤️ for your health journey</p>
   </footer>
-
 </body>
 </html>
