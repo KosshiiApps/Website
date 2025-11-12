@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kosshiiapps.com/sitemap.xml
+
+# Allow all pages to be crawled
+Allow: /*.html
+Allow: /icons/
+Allow: /badges/
+Allow: /Screenshots/
+
+# No specific disallow rules needed for this simple site
+
