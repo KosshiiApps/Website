@@ -12,3 +12,5 @@ Allow: /Screenshots/
 
 # No specific disallow rules needed for this simple site
 
+
+
