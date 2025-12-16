@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support | KosshiiApps</title>
+  <meta name="description" content="Get help for KosshiiApps. Friendly, fast indie support with clear FAQs and contact options." />
+  <script src="https://cdn.tailwindcss.com?plugins=typography,forms"></script>
+</head>
+<body class="bg-gray-950 text-white min-h-screen">
+  <!-- Background gradient -->
+  <div class="fixed inset-0 bg-gradient-to-b from-purple-900/20 via-gray-950 to-gray-950 pointer-events-none"></div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+      <div class="flex justify-between items-center h-16">
+        <a href="index.html" class="text-xl font-bold text-white hover:text-gray-200 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">KosshiiApps</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Home</a>
+          <a href="index.html#apps" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Apps</a>
+          <a href="index.html#about" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">About</a>
+          <a href="mailto:kosshiiapps@gmail.com" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Contact</a>
+          <a href="support.html" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Support</a>
+          <a href="privacy.html" class="text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-2 py-1">Privacy</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button type="button" id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md p-2" aria-expanded="false" aria-label="Toggle menu">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-gray-950/95 backdrop-blur-md border-t border-white/10">
+        <div class="px-4 py-3 space-y-2">
+          <a href="index.html" class="block text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-3 py-2 rounded-md">Home</a>
+          <a href="index.html#apps" class="block text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-3 py-2 rounded-md">Apps</a>
+          <a href="index.html#about" class="block text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-3 py-2 rounded-md">About</a>
+          <a href="mailto:kosshiiapps@gmail.com" class="block text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-3 py-2 rounded-md">Contact</a>
+          <a href="support.html" class="block text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-3 py-2 rounded-md">Support</a>
+          <a href="privacy.html" class="block text-gray-300 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 focus:rounded-md px-3 py-2 rounded-md">Privacy</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative">
+    <!-- Intro -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-10 ring-1 ring-white/10 shadow-2xl shadow-purple-500/10">
+        <div class="flex flex-col lg:flex-row justify-between gap-8">
+          <div class="space-y-4">
+            <p class="text-sm uppercase tracking-[0.35em] text-gray-400">Support</p>
+            <h1 class="text-4xl font-bold">Indie, fast, and thoughtful help</h1>
+            <p class="text-gray-300 text-lg max-w-2xl">I build simple, focused apps that solve everyday problems. If something isn’t right, you’ll hear back from me—usually within 1–2 business days.</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10 max-w-sm">
+            <p class="text-sm text-gray-400 mb-2">Response time</p>
+            <p class="text-xl font-semibold">Typically 1–2 business days</p>
+            <p class="text-gray-300 mt-3">For the fastest reply, include your app name, platform, steps to reproduce, and screenshots if possible.</p>
+            <a href="mailto:kosshiiapps@gmail.com" class="mt-4 inline-flex items-center justify-center bg-white text-gray-950 font-semibold px-5 py-3 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-gray-950 transition-all duration-200">
+              Email kosshiiapps@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-14">
+      <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-10 ring-1 ring-white/10">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h2 class="text-3xl font-bold">FAQs</h2>
+          <p class="text-sm text-gray-400 uppercase tracking-[0.35em]">Quick answers</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <article class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-lg font-semibold mb-2">Installing & updating</h3>
+            <p class="text-gray-300">All apps ship through the App Store. If an update stalls, restart the App Store and try again on Wi‑Fi.</p>
+          </article>
+          <article class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-lg font-semibold mb-2">Crashes or sync issues</h3>
+            <p class="text-gray-300">Force-quit and relaunch first. If it repeats, email me with the steps you took and your device model/iOS version.</p>
+          </article>
+          <article class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-lg font-semibold mb-2">Notifications</h3>
+            <p class="text-gray-300">Check iOS Settings &gt; Notifications for the app. Ensure Focus modes or Low Power aren’t blocking alerts.</p>
+          </article>
+          <article class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-lg font-semibold mb-2">Data, export, backups</h3>
+            <p class="text-gray-300">Most data stays on-device. If you need an export, reach out with the app name and what you want to export.</p>
+          </article>
+          <article class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-lg font-semibold mb-2">Subscription or billing</h3>
+            <p class="text-gray-300">Billing is handled by Apple. You can manage or cancel from Settings &gt; Apple ID &gt; Subscriptions.</p>
+          </article>
+          <article class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-lg font-semibold mb-2">Platform availability</h3>
+            <p class="text-gray-300">Apps are designed for iPhone first. iPad and Mac support varies by app; check the app page for specifics.</p>
+          </article>
+          <article class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-lg font-semibold mb-2">Known limitations</h3>
+            <p class="text-gray-300">If a feature is limited by design, I’ll note it on the app page. Still unsure? Send a quick email.</p>
+          </article>
+          <article class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-lg font-semibold mb-2">Feature requests</h3>
+            <p class="text-gray-300">I prioritize clarity and reliability. If you have an idea, include the problem it solves so I can weigh it thoughtfully.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-10 ring-1 ring-white/10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <div class="space-y-4">
+            <p class="text-sm uppercase tracking-[0.35em] text-gray-400">Contact</p>
+            <h2 class="text-3xl font-bold">Reach out anytime</h2>
+            <p class="text-gray-300 text-lg">Email is the fastest way to reach me. Please include the app name, platform, steps to reproduce the issue, and screenshots if you have them.</p>
+            <div class="space-y-2 text-gray-300">
+              <p><strong>Email:</strong> <a href="mailto:kosshiiapps@gmail.com" class="text-blue-300 hover:text-blue-200">kosshiiapps@gmail.com</a></p>
+              <p><strong>Expect:</strong> A reply within 1–2 business days.</p>
+              <p><strong>Before you write:</strong> A quick scan of the FAQs above often solves the most common questions.</p>
+              <p><strong>Resources:</strong> See the <a href="index.html#apps" class="text-blue-300 hover:text-blue-200">app pages</a> for feature details and screenshots.</p>
+            </div>
+          </div>
+
+          <div class="bg-white/5 rounded-2xl p-6 ring-1 ring-white/10">
+            <h3 class="text-xl font-semibold mb-4">Send a quick note</h3>
+            <form id="support-form" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm text-gray-300 mb-1">Name (optional)</label>
+                <input id="name" name="name" type="text" class="w-full bg-gray-900 border border-white/10 rounded-xl px-3 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/20">
+              </div>
+              <div>
+                <label for="email" class="block text-sm text-gray-300 mb-1">Email</label>
+                <input id="email" name="email" type="email" required class="w-full bg-gray-900 border border-white/10 rounded-xl px-3 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/20">
+              </div>
+              <div>
+                <label for="app" class="block text-sm text-gray-300 mb-1">App name</label>
+                <input id="app" name="app" type="text" class="w-full bg-gray-900 border border-white/10 rounded-xl px-3 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="e.g., Forma, Focus Timer">
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="platform" class="block text-sm text-gray-300 mb-1">Platform</label>
+                  <input id="platform" name="platform" type="text" class="w-full bg-gray-900 border border-white/10 rounded-xl px-3 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="iPhone / iPad / Mac">
+                </div>
+                <div>
+                  <label for="version" class="block text-sm text-gray-300 mb-1">App version (if known)</label>
+                  <input id="version" name="version" type="text" class="w-full bg-gray-900 border border-white/10 rounded-xl px-3 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/20">
+                </div>
+              </div>
+              <div>
+                <label for="message" class="block text-sm text-gray-300 mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" required class="w-full bg-gray-900 border border-white/10 rounded-xl px-3 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white/20" placeholder="Include steps to reproduce, what you expected, and what happened."></textarea>
+              </div>
+              <p class="text-sm text-gray-400">Submitting opens your email app with this information pre-filled.</p>
+              <button type="submit" class="w-full bg-white text-gray-950 font-semibold px-4 py-3 rounded-xl hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-gray-950 transition-colors duration-200">Create email</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto text-center space-y-3">
+      <div class="flex justify-center gap-4 text-sm text-gray-300">
+        <a href="index.html" class="hover:text-white transition-colors duration-200">Home</a>
+        <span class="text-gray-600">•</span>
+        <a href="index.html#apps" class="hover:text-white transition-colors duration-200">Apps</a>
+        <span class="text-gray-600">•</span>
+        <a href="support.html" class="hover:text-white transition-colors duration-200">Support</a>
+        <span class="text-gray-600">•</span>
+        <a href="privacy.html" class="hover:text-white transition-colors duration-200">Privacy</a>
+      </div>
+      <p class="text-sm text-gray-400">© 2025 KosshiiApps — kosshiiapps@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- Mobile menu JavaScript -->
+  <script src="mobile-menu.js"></script>
+  <script>
+    const form = document.getElementById('support-form');
+    if (form) {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const params = new URLSearchParams();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const app = document.getElementById('app').value.trim();
+        const platform = document.getElementById('platform').value.trim();
+        const version = document.getElementById('version').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        const subjectParts = ['Support request'];
+        if (app) subjectParts.push(`- ${app}`);
+        if (platform) subjectParts.push(`(${platform})`);
+
+        const bodyLines = [
+          name ? `Name: ${name}` : null,
+          email ? `Email: ${email}` : null,
+          app ? `App: ${app}` : null,
+          platform ? `Platform: ${platform}` : null,
+          version ? `App version: ${version}` : null,
+          '',
+          'Message:',
+          message || ''
+        ].filter(Boolean);
+
+        const mailto = `mailto:kosshiiapps@gmail.com?subject=${encodeURIComponent(subjectParts.join(' '))}&body=${encodeURIComponent(bodyLines.join('\\n'))}`;
+        window.location.href = mailto;
+      });
+    }
+  </script>
+</body>
+</html>
+
